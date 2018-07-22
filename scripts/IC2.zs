@@ -1,4 +1,5 @@
 // --- Created by DreamMasterXXL ---
+// --- Created by DreamMasterXXL ---
 
 
 // --- Import ---
@@ -30,6 +31,7 @@ val IronFurnace = <IC2:blockMachine:1>;
 val IronPlate = <ore:plateAnyIron>;
 val Furnace = <minecraft:furnace>;
 val Wrench = <ore:craftingToolWrench>;
+val LuVFieldGen = <gregtech:gt.metaitem.01:32675>;
 
 
 
@@ -94,9 +96,6 @@ recipes.remove(<IC2:itemRecipePart:5>);
 // --- Coil
 recipes.remove(<IC2:itemRecipePart>);
 
-// --- Advanced Battery
-recipes.remove(<IC2:itemAdvBat>);
-
 // --- Bat Box
 recipes.remove(<IC2:blockElectric>);
 
@@ -120,21 +119,6 @@ recipes.remove(<IC2:blockMetal:3>);
 
 // --- Mining Laser
 recipes.remove(<IC2:itemToolMiningLaser>);
-
-// --- Bat Pack
-recipes.remove(<IC2:itemArmorBatpack>);
-
-// --- Advanced Batpack
-recipes.remove(<IC2:itemArmorAdvBatpack>);
-
-// --- Energy Pack
-recipes.remove(<IC2:itemArmorEnergypack>);
-
-// --- Electric Jetpack
-recipes.remove(<IC2:itemArmorJetpackElectric:*>);
-
-// --- Biogas Jetpack
-recipes.remove(<IC2:itemArmorJetpack:*>);
 
 // --- ITNT
 recipes.remove(<IC2:blockITNT>);
@@ -173,52 +157,52 @@ recipes.remove(<IC2:itemPartCarbonMesh>);
 recipes.remove(<IC2:blockAlloyGlass>);
 
 // --- Mining Drill
-recipes.remove(<IC2:itemToolDrill:*>);
+recipes.remove(<IC2:itemToolDrill>);
 
 // --- Diamond Drill
-recipes.remove(<IC2:itemToolDDrill:*>);
+recipes.remove(<IC2:itemToolDDrill>);
 
 // --- Iridium Drill
-recipes.remove(<IC2:itemToolIridiumDrill:*>);
+recipes.remove(<IC2:itemToolIridiumDrill>);
 
 // --- Chainsaw
-recipes.remove(<IC2:itemToolChainsaw:*>);
+recipes.remove(<IC2:itemToolChainsaw>);
 
 // --- Electric Wrenche
-recipes.remove(<IC2:itemToolWrenchElectric:*>);
+recipes.remove(<IC2:itemToolWrenchElectric>);
 
 // --- Electric Treetap
-recipes.remove(<IC2:itemTreetapElectric:*>);
+recipes.remove(<IC2:itemTreetapElectric>);
 
 // --- Electric Hoe
-recipes.remove(<IC2:itemToolHoe:*>);
+recipes.remove(<IC2:itemToolHoe>);
 
 // --- Windmeter
-recipes.remove(<IC2:windmeter:*>);
+recipes.remove(<IC2:windmeter>);
 
 // --- Wood Rotor Blade
 recipes.remove(<IC2:itemRecipePart:7>);
 
 // --- Kinetic Wind Generator Rotor Blade (Wood)
-recipes.remove(<IC2:itemwoodrotor:*>);
+recipes.remove(<IC2:itemwoodrotor>);
 
 // --- Iron Rotor Blade
 recipes.remove(<IC2:itemRecipePart:8>);
 
 // --- Kinetic Wind Generator Rotor Blade (Iron)
-recipes.remove(<IC2:itemironrotor:*>);
+recipes.remove(<IC2:itemironrotor>);
 
 // --- Steel Rotor Blade
 recipes.remove(<IC2:itemRecipePart:10>);
 
 // --- Kinetic Wind Generator Rotor Blade (Steel)
-recipes.remove(<IC2:itemsteelrotor:*>);
+recipes.remove(<IC2:itemsteelrotor>);
 
 // --- Carbon Rotor Blade
 recipes.remove(<IC2:itemRecipePart:9>);
 
 // --- Kinetic Wind Generator Rotor Blade (Carbon)
-recipes.remove(<IC2:itemwcarbonrotor:*>);
+recipes.remove(<IC2:itemwcarbonrotor>);
 
 // --- Wrench
 recipes.remove(<IC2:itemToolWrench>);
@@ -533,9 +517,6 @@ recipes.remove(<IC2:reactorCoolantTriple:*>);
 // --- 60k Coolant Cell
 recipes.remove(<IC2:reactorCoolantSix:*>);
 
-// --- Night Vision Goggle
-recipes.remove(<IC2:itemNightvisionGoggles:*>);
-
 // --- Rubber Boots
 recipes.remove(<IC2:itemArmorRubBoots>);
 
@@ -569,30 +550,6 @@ recipes.remove(<IC2:blockGenerator:9>);
 // --- Personal Safe
 recipes.remove(<IC2:blockPersonal>);
 
-// --- Nano Suit Boots
-recipes.remove(<IC2:itemArmorNanoBoots:*>);
-
-// --- Nano Suit Chestplate
-recipes.remove(<IC2:itemArmorNanoChestplate:*>);
-
-// --- Nano Suit Helmet
-recipes.remove(<IC2:itemArmorNanoHelmet:*>);
-
-// --- Nano Suit Leggings
-recipes.remove(<IC2:itemArmorNanoLegs:*>);
-
-// --- Quantum Suit Boots
-recipes.remove(<IC2:itemArmorQuantumBoots:*>);
-
-// --- Quantum Suit Chestplate
-recipes.remove(<IC2:itemArmorQuantumChestplate:*>);
-
-// --- Quantum Suit Helmet
-recipes.remove(<IC2:itemArmorQuantumHelmet:*>);
-
-// --- Quantum Suit Leggings
-recipes.remove(<IC2:itemArmorQuantumLegs:*>);
-
 // --- Crop Sticks
 recipes.remove(<IC2:blockCrop>);
 
@@ -600,22 +557,22 @@ recipes.remove(<IC2:blockCrop>);
 recipes.remove(<IC2:itemFoamSprayer>);
 
 // --- CF Backpack
-recipes.remove(<IC2:itemArmorCFPack:*>);
+recipes.remove(<IC2:itemArmorCFPack>);
 
 // --- Composite Vest
 recipes.remove(<IC2:itemArmorAlloyChestplate>);
 
 // --- Nano Saber
-recipes.remove(<IC2:itemNanoSaber:*>);
+recipes.remove(<IC2:itemNanoSaber>);
 
 // --- Obscurator
-recipes.remove(<IC2:obscurator:*>);
+recipes.remove(<IC2:obscurator>);
 
 // --- OD Scanner
-recipes.remove(<IC2:itemScanner:*>);
+recipes.remove(<IC2:itemScanner>);
 
 // --- OV Scanner
-recipes.remove(<IC2:itemScannerAdv:*>);
+recipes.remove(<IC2:itemScannerAdv>);
 
 // --- Iridium
 recipes.remove(<IC2:itemOreIridium>);
@@ -801,6 +758,7 @@ recipes.remove(<IC2:itemPartCFPowder>);
 
 
 
+
 // --- Add Recipes ---
 
 
@@ -826,15 +784,9 @@ recipes.addShaped(<IC2:blockReactorChamber>, [
 
 // --- Heat Conductor
 recipes.addShaped(<IC2:itemRecipePart:5>, [
-[<ore:plateRubber>, <ore:plateCopper>, <ore:plateRubber>],
+[<ore:plateAnyRubber>, <ore:plateCopper>, <ore:plateAnyRubber>],
 [<ore:plateCopper>, <ore:plateSilver>, <ore:plateCopper>],
-[<ore:plateRubber>, <ore:plateCopper>, <ore:plateRubber>]]);
-
-// --- Advanced Battery
-recipes.addShaped(<IC2:itemAdvBat:1>, [
-[<ore:wireGt08Copper>, <ore:craftingToolScrewdriver>, <ore:wireGt08Copper>],
-[<IC2:itemCasing>, <gregtech:gt.metaitem.01:32501>, <IC2:itemCasing>],
-[<IC2:itemCasing>, <IC2:itemCasing:6>, <IC2:itemCasing>]]);
+[<ore:plateAnyRubber>, <ore:plateCopper>, <ore:plateAnyRubber>]]);
 
 // --- Bat Box
 recipes.addShaped(<IC2:blockElectric>, [
@@ -845,8 +797,8 @@ recipes.addShaped(<IC2:blockElectric>, [
 // --- CESU
 recipes.addShaped(<IC2:blockElectric:7>, [
 [<ore:cableGt01AnyCopper>, <ore:plateBronze>, <ore:cableGt01AnyCopper>],
-[<IC2:itemAdvBat:1>, <gregtech:gt.blockmachines:12>, <IC2:itemAdvBat:1>],
-[<ore:plateBronze>, <IC2:itemAdvBat:1>, <ore:plateBronze>]]);
+[<IC2:itemAdvBat:*>, <gregtech:gt.blockmachines:12>, <IC2:itemAdvBat:*>],
+[<ore:plateBronze>, <IC2:itemAdvBat:*>, <ore:plateBronze>]]);
 
 // --- MFE
 recipes.addShaped(<IC2:blockElectric:1>, [
@@ -862,8 +814,8 @@ recipes.addShaped(<IC2:blockElectric:2>, [
 
 // --- Rubber Sheet
 recipes.addShaped(<IC2:blockRubber>, [
-[<ore:plateRubber>, <ore:plateRubber>, <ore:plateRubber>],
-[<ore:plateRubber>, <ore:plateRubber>, <ore:plateRubber>],
+[<ore:plateAnyRubber>, <ore:plateAnyRubber>, <ore:plateAnyRubber>],
+[<ore:plateAnyRubber>, <ore:plateAnyRubber>, <ore:plateAnyRubber>],
 [null, null, null]]);
 
 // --- Wood Scaffold
@@ -877,40 +829,10 @@ recipes.addShaped(<IC2:blockIronScaffold>, [
 [<ore:craftingToolWrench>, <ore:frameGtIron>, <ore:craftingToolScrewdriver>]]);
 
 // --- Mining Laser
-recipes.addShaped(<IC2:itemToolMiningLaser:1>, [
+recipes.addShaped(<IC2:itemToolMiningLaser>, [
 [<ore:plateTitanium>, <dreamcraft:item.LaserEmitter>, <ore:plateTitanium>],
 [<ore:circuitMaster>, <gregtech:gt.metaitem.01:32527>, <ore:circuitMaster>],
 [<ore:craftingToolFile>, <IC2:itemRecipePart:2>, <ore:craftingToolHardHammer>]]);
-
-// --- Bat Pack
-recipes.addShaped(<IC2:itemArmorBatpack:1>, [
-[<IC2:itemBatREDischarged>, <ore:circuitBasic>, <IC2:itemBatREDischarged>],
-[<IC2:itemBatREDischarged>, <dreamcraft:item.AluminiumItemCasing>, <IC2:itemBatREDischarged>],
-[<IC2:itemBatREDischarged>, <ore:wireGt02Tin>, <IC2:itemBatREDischarged>]]);
-
-// --- Advanced Batpack
-recipes.addShaped(<IC2:itemArmorAdvBatpack:1>, [
-[<IC2:itemAdvBat:1>, <ore:circuitGood>, <IC2:itemAdvBat:1>],
-[<IC2:itemAdvBat:1>, <IC2:itemArmorBatpack:1>, <IC2:itemAdvBat:1>],
-[<IC2:itemAdvBat:1>, <ore:wireGt04AnnealedCopper>, <IC2:itemAdvBat:1>]]);
-
-// --- Energy Pack
-recipes.addShaped(<IC2:itemArmorEnergypack:1>, [
-[<ore:circuitAdvanced>, <dreamcraft:item.StainlessSteelItemCasing>, <ore:circuitAdvanced>],
-[<ore:batteryElite>, <IC2:itemArmorAdvBatpack:1>, <ore:batteryElite>],
-[<dreamcraft:item.StainlessSteelItemCasing>, <ore:wireGt08Gold>, <dreamcraft:item.StainlessSteelItemCasing>]]);
-
-// --- Electric Jetpack
-recipes.addShaped(<IC2:itemArmorJetpackElectric:1>, [
-[<dreamcraft:item.StainlessSteelItemCasing>, <ore:circuitAdvanced>, <dreamcraft:item.StainlessSteelItemCasing>],
-[<gregtech:gt.metaitem.01:32602>, <IC2:itemArmorBatpack:1>, <gregtech:gt.metaitem.01:32602>],
-[<GraviSuite:itemSimpleItem:6>, <ore:wireGt04AnnealedCopper>, <GraviSuite:itemSimpleItem:6>]]);
-
-// --- Biogas Jetpack
-recipes.addShaped(<IC2:itemArmorJetpack:1>, [
-[<dreamcraft:item.StainlessSteelItemCasing>, <ore:circuitAdvanced>, <dreamcraft:item.StainlessSteelItemCasing>],
-[<BuildCraft|Factory:tankBlock>, <IC2:reactorCoolantSix:1>, <BuildCraft|Factory:tankBlock>],
-[<GraviSuite:itemSimpleItem:6>, <adventurebackpack:backpackComponent:5>, <GraviSuite:itemSimpleItem:6>]]);
 
 // --- Reactor Plating
 recipes.addShaped(<IC2:reactorPlating>, [
@@ -933,25 +855,25 @@ recipes.addShaped(<IC2:reactorPlatingExplosive>, [
 // --- Wood Rotor Blade
 recipes.addShaped(<IC2:itemRecipePart:7>, [
 [<gregtech:gt.metaitem.01:17809>, <gregtech:gt.metaitem.01:17809>, <gregtech:gt.metaitem.01:17809>],
-[<gregtech:gt.metaitem.01:17809>, <ore:ringIron>, <gregtech:gt.metaitem.01:17809>],
+[<gregtech:gt.metaitem.01:17809>, <ore:ringStainlessSteel>, <gregtech:gt.metaitem.01:17809>],
 [<gregtech:gt.metaitem.01:17809>, <gregtech:gt.metaitem.01:17809>, <gregtech:gt.metaitem.01:17809>]]);
 
 // --- Kinetic Wind Generator Rotor Blade (Wood)
 recipes.addShaped(<IC2:itemwoodrotor:1>, [
 [<ore:screwSteel>, <IC2:itemRecipePart:7>, <ore:craftingToolWrench>],
-[<IC2:itemRecipePart:7>, <ore:ringSteel>, <IC2:itemRecipePart:7>],
+[<IC2:itemRecipePart:7>, <ore:ringStainlessSteel>, <IC2:itemRecipePart:7>],
 [<ore:craftingToolScrewdriver>, <IC2:itemRecipePart:7>, <ore:screwSteel>]]);
 
 // --- Iron Rotor Blade
 recipes.addShaped(<IC2:itemRecipePart:8>, [
 [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
-[<ore:plateIron>, <ore:ringStainlessSteel>, <ore:plateIron>],
+[<ore:plateIron>, <ore:ringTitanium>, <ore:plateIron>],
 [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
 
 // --- Kinetic Wind Generator Rotor Blade (Iron)
 recipes.addShaped(<IC2:itemironrotor:1>, [
 [<IC2:itemRecipePart:11>, <IC2:itemRecipePart:8>, <ore:craftingToolHardHammer>],
-[<IC2:itemRecipePart:8>, <ore:ringStainlessSteel>, <IC2:itemRecipePart:8>],
+[<IC2:itemRecipePart:8>, <ore:ringTitanium>, <IC2:itemRecipePart:8>],
 [<ore:craftingToolWrench>, <IC2:itemRecipePart:8>, <IC2:itemRecipePart:11>]]);
 
 // --- Steel Rotor Blade
@@ -966,7 +888,7 @@ recipes.addShapeless(<IC2:itemRecipePart:10>, [<Railcraft:part.turbine.blade>]);
 // --- Kinetic Wind Generator Rotor Blade (Steel)
 recipes.addShaped(<IC2:itemsteelrotor:1>, [
 [<IC2:itemRecipePart:12>, <IC2:itemRecipePart:10>, <ore:craftingToolHardHammer>],
-[<IC2:itemRecipePart:10>, <ore:ringTitanium>, <IC2:itemRecipePart:10>],
+[<IC2:itemRecipePart:10>, <ore:ringTungstenSteel>, <IC2:itemRecipePart:10>],
 [<ore:craftingToolWrench>, <IC2:itemRecipePart:10>, <IC2:itemRecipePart:12>]]);
 
 // --- Carbon Rotor Blade
@@ -978,14 +900,20 @@ recipes.addShaped(<IC2:itemRecipePart:9>, [
 // --- Kinetic Wind Generator Rotor Blade (Carbon)
 recipes.addShaped(<IC2:itemwcarbonrotor:1>, [
 [<miscutils:itemTungstenSteelShaft>, <IC2:itemRecipePart:9>, <ore:craftingToolHardHammer>],
-[<IC2:itemRecipePart:9>, <ore:ringTungstenSteel>, <IC2:itemRecipePart:9>],
+[<IC2:itemRecipePart:9>, <ore:ringIridium>, <IC2:itemRecipePart:9>],
 [<ore:craftingToolWrench>, <IC2:itemRecipePart:9>, <miscutils:itemTungstenSteelShaft>]]);
 
 // --- Kinetic Water Generator
-recipes.addShaped(<IC2:blockKineticGenerator:4>, [
-[<dreamcraft:item.StainlessSteelItemCasing>, <ore:rotorStainlessSteel>, <dreamcraft:item.StainlessSteelItemCasing>],
-[<IC2:itemRecipePart:11>, <gregtech:gt.blockcasings2:10>, <IC2:itemRecipePart:11>],
-[<ore:circuitAdvanced>, <ore:rotorStainlessSteel>, <ore:circuitAdvanced>]]);
+mods.avaritia.ExtremeCrafting.addShaped(<IC2:blockKineticGenerator:4>, [
+[null, null, null, null, null, null, null, null, null],
+[null, null, null, null, null, null, null, null, null],
+[null, null, <ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>, <IC2:itemRecipePart:12>, <ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>, null, null],
+[null, null, <dreamcraft:item.StainlessSteelItemCasing>, <gregtech:gt.metaitem.01:32612>, <ore:cableGt01Platinum>, <gregtech:gt.metaitem.01:32612>, <dreamcraft:item.StainlessSteelItemCasing>, null, null],
+[null, null, <IC2:itemRecipePart:12>, <ore:circuitData>, <gregtech:gt.blockcasings2:3>, <ore:circuitData>, <IC2:itemRecipePart:12>, null, null],
+[null, null, <dreamcraft:item.StainlessSteelItemCasing>, <ore:gearGtSmallTitanium>, <ore:cableGt01Platinum>, <ore:gearGtSmallTitanium>, <dreamcraft:item.StainlessSteelItemCasing>, null, null],
+[null, null, <ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>, <IC2:itemRecipePart:12>, <ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>, null, null],
+[null, null, null, null, null, null, null, null, null],
+[null, null, null, null, null, null, null, null, null]]);
 
 // --- Sterling Kinetic Generator
 recipes.addShaped(<IC2:blockKineticGenerator:5>, [
@@ -1011,9 +939,19 @@ recipes.addShaped(IronFurnace, [
 
 // --- Neutron Reflector
 recipes.addShaped(<IC2:reactorReflector:1>, [
-[<ore:dustTin>, <ore:plateAlloyCarbon>, <ore:dustTin>],
-[<ore:plateAlloyCarbon>, <ore:plateDenseCopper>, <ore:plateAlloyCarbon>],
-[<ore:dustTin>, <ore:plateAlloyCarbon>, <ore:dustTin>]]);
+[<ore:plateTin>, <ore:plateAlloyCarbon>, <ore:plateTin>],
+[<ore:dustGraphite>, <ore:plateDenseCopper>, <ore:dustGraphite>],
+[<ore:plateTin>, <ore:plateAlloyCarbon>, <ore:plateTin>]]);
+// -
+recipes.addShaped(<IC2:reactorReflector:1>, [
+[<ore:plateTin>, <ore:plateAlloyCarbon>, <ore:plateTin>],
+[<ore:dustGraphite>, <ore:plateDenseSteel>, <ore:dustGraphite>],
+[<ore:plateTin>, <ore:plateAlloyCarbon>, <ore:plateTin>]]);
+// -
+recipes.addShaped(<IC2:reactorReflector:1>, [
+[<ore:plateTin>, <ore:plateAlloyCarbon>, <ore:plateTin>],
+[<ore:dustGraphite>, <ore:plateDoubleBeryllium>, <ore:dustGraphite>],
+[<ore:plateTin>, <ore:plateAlloyCarbon>, <ore:plateTin>]]);
 
 // --- Heat Vent
 recipes.addShaped(<IC2:reactorVent:1>, [
@@ -1122,27 +1060,27 @@ recipes.addShaped(<IC2:itemBoat:3>, [
 
 // --- Rubber Boat
 recipes.addShaped(<IC2:itemBoat:1>, [
-[<ore:plateRubber>, <ore:craftingToolSaw>, <ore:plateRubber>],
-[<ore:plateRubber>, <ore:craftingToolSoftHammer>, <ore:plateRubber>],
-[<ore:plateRubber>, <ore:plateRubber>, <ore:plateRubber>]]);
+[<ore:plateAnyRubber>, <ore:craftingToolSaw>, <ore:plateAnyRubber>],
+[<ore:plateAnyRubber>, <ore:craftingToolSoftHammer>, <ore:plateAnyRubber>],
+[<ore:plateAnyRubber>, <ore:plateAnyRubber>, <ore:plateAnyRubber>]]);
 
 // --- Rubber Boat repair
-recipes.addShapeless(<IC2:itemBoat:1>, [<IC2:itemBoat:2>, <ore:plateRubber>, <ore:plateRubber>, <ore:craftingToolHardHammer>]);
+recipes.addShapeless(<IC2:itemBoat:1>, [<IC2:itemBoat:2>, <ore:plateAnyRubber>, <ore:plateAnyRubber>, <ore:craftingToolHardHammer>]);
 
 // --- Electric Treetap
-recipes.addShaped(<IC2:itemTreetapElectric:26>, [
+recipes.addShaped(<IC2:itemTreetapElectric>, [
 [<ore:screwStainlessSteel>, <IC2:itemTreetap>, <ore:craftingToolScrewdriver>],
 [<ore:gearGtSmallStainlessSteel>, <IC2:itemRecipePart:3>, <ore:gearGtSmallStainlessSteel>],
 [<ore:plateStainlessSteel>, <ore:batteryBasic>, <ore:plateStainlessSteel>]]);
 
 // --- Electric Hoe
-recipes.addShaped(<IC2:itemToolHoe:26>, [
+recipes.addShaped(<IC2:itemToolHoe>, [
 [<ore:screwStainlessSteel>, <ore:toolHeadHoeStainlessSteel>, <ore:craftingToolScrewdriver>],
 [<ore:gearGtSmallStainlessSteel>, <IC2:itemRecipePart:3>, <ore:gearGtSmallStainlessSteel>],
 [<ore:plateStainlessSteel>, <ore:batteryBasic>, <ore:plateStainlessSteel>]]);
 
 // --- Windmeter
-recipes.addShaped(<IC2:windmeter:26>, [
+recipes.addShaped(<IC2:windmeter>, [
 [<ore:screwStainlessSteel>, <ore:rotorAluminium>, <ore:craftingToolScrewdriver>],
 [<ore:gearGtSmallStainlessSteel>, <IC2:itemRecipePart:3>, <ore:gearGtSmallStainlessSteel>],
 [<ore:plateStainlessSteel>, <ore:batteryBasic>, <ore:plateStainlessSteel>]]);
@@ -1160,16 +1098,10 @@ recipes.addShaped(<IC2:itemToolPainter>, [
 [null, <ore:stickSteel>, null]]);
 
 // --- Charging RE Battery
-recipes.addShaped(<IC2:itemBatChargeRE:26>, [
+recipes.addShaped(<IC2:itemBatChargeRE>, [
 [<ore:circuitBasic>, <ore:batteryBasic>, <ore:circuitBasic>],
 [<ore:batteryBasic>, <gregtech:gt.metaitem.01:17315>, <ore:batteryBasic>],
 [<ore:circuitBasic>, <ore:batteryBasic>, <ore:circuitBasic>]]);
-
-// --- Night Vision Goggle
-recipes.addShaped(<IC2:itemNightvisionGoggles:26>, [
-[<IC2:reactorHeatSwitchDiamond:1>, <ore:screwStainlessSteel>, <IC2:reactorHeatSwitchDiamond:1>],
-[<ore:ringStainlessSteel>, <ore:boltStainlessSteel>, <ore:ringStainlessSteel>],
-[<GalacticraftCore:item.sensorLens>,  <ore:craftingToolScrewdriver>, <GalacticraftCore:item.sensorLens>]]);
 
 // --- Personal Safe
 recipes.addShaped(<IC2:blockPersonal>, [
@@ -1206,46 +1138,46 @@ recipes.addShaped(<IC2:itemArmorCFPack:26>, [
 [<IC2:itemCasing:5>, <ore:craftingToolScrewdriver>, <IC2:itemCasing:5>]]);
 
 // --- Nano Saber
-recipes.addShaped(<IC2:itemNanoSaber:1>, [
+recipes.addShaped(<IC2:itemNanoSaber>, [
 [<ore:plateAlloyIridium>, <ore:toolHeadSwordPlatinum>, <ore:plateAlloyIridium>],
 [<ore:circuitMaster>, <ore:batteryMaster>, <ore:circuitMaster>],
 [<ore:craftingToolFile>, <IC2:itemRecipePart:2>, <ore:craftingToolHardHammer>]]);
 
 // --- Obscurator
-recipes.addShaped(<IC2:obscurator:1>, [
+recipes.addShaped(<IC2:obscurator>, [
 [<ore:screwSteel>, <ore:craftingToolScrewdriver>, <ore:screwSteel>],
 [<ore:cableGt01Gold>, <dreamcraft:item.Display>, <ore:cableGt01Gold>],
 [<IC2:itemCasing:4>, <ore:batteryAdvanced>, <IC2:itemCasing:4>]]);
 
 // --- OD Scanner
-recipes.addShaped(<IC2:itemScanner:1>, [
+recipes.addShaped(<IC2:itemScanner>, [
 [<IC2:itemCasing:3>, <ore:plateStainlessSteel>, <IC2:itemCasing:3>],
 [<ore:circuitAdvanced>, <dreamcraft:item.Display>, <ore:circuitAdvanced>],
 [<ore:cableGt01Gold>, <ore:batteryElite>, <ore:cableGt01Gold>]]);
 
 // --- OV Scanner
-recipes.addShaped(<IC2:itemScannerAdv:1>, [
+recipes.addShaped(<IC2:itemScannerAdv>, [
 [<dreamcraft:item.TitaniumItemCasing>, <IC2:itemScanner:*>, <dreamcraft:item.TitaniumItemCasing>],
 [<ore:circuitData>, <dreamcraft:item.Display>, <ore:circuitData>],
 [<ore:cableGt01Nichrome>, <ore:batteryMaster>, <ore:cableGt01Nichrome>]]);
 
 // --- Mining Drill
-//recipes.addShaped(<IC2:itemToolDrill:1>, [
+//recipes.addShaped(<IC2:itemToolDrill>, [
 //[<ore:screwStainlessSteel>, <ore:toolHeadDrillMeteoricSteel>, <ore:screwStainlessSteel>],
 //[<ore:gearGtSmallStainlessSteel>, <IC2:itemRecipePart:2>, <ore:gearGtSmallStainlessSteel>],
-//[<ore:plateStainlessSteel>, <IC2:itemBatChargeRE:1>, <ore:plateStainlessSteel>]]);
+//[<ore:plateStainlessSteel>, <IC2:itemBatChargeRE:26>, <ore:plateStainlessSteel>]]);
 
 // --- Diamond Drill
-//recipes.addShaped(<IC2:itemToolDDrill:1>, [
+//recipes.addShaped(<IC2:itemToolDDrill>, [
 //[<ore:screwTitanium>, <dreamcraft:item.DiamondDrillTip>, <ore:screwTitanium>],
 //[<ore:gearGtSmallTitanium>, <IC2:itemRecipePart:2>, <ore:gearGtSmallTitanium>],
-//[<ore:plateTitanium>, <IC2:itemBatChargeRE:1>, <ore:plateTitanium>]]);
+//[<ore:plateTitanium>, <IC2:itemBatChargeRE:26>, <ore:plateTitanium>]]);
 
 // --- Iridium Drill
-//recipes.addShaped(<IC2:itemToolIridiumDrill:1>, [
+//recipes.addShaped(<IC2:itemToolIridiumDrill>, [
 //[<ore:screwTungstenSteel>, <dreamcraft:item.ReinforcedIridiumDrillTip>, <ore:screwTungstenSteel>],
 //[<ore:gearGtSmallTungstenSteel>, <IC2:itemRecipePart:2>, <ore:gearGtSmallTungstenSteel>],
-//[<ore:plateTungstenSteel>, <IC2:itemBatChargeAdv:1>, <ore:plateTungstenSteel>]]);
+//[<ore:plateTungstenSteel>, <IC2:itemBatChargeAdv:26>, <ore:plateTungstenSteel>]]);
 
 // --- Small Power Unit
 recipes.addShaped(<IC2:itemRecipePart:3>, [
@@ -1351,7 +1283,7 @@ recipes.addShaped(<IC2:blockMachine2:1>, [
 
 // --- Teleporter
 recipes.addShaped(<IC2:blockMachine2>, [
-[<ore:circuitMaster>, <ore:lensDiamond>, <ore:circuitMaster>],
+[LuVFieldGen, <ore:lensDiamond>, LuVFieldGen],
 [<ore:circuitElite>, <IC2:blockElectric:5>, <ore:circuitElite>],
 [<gregtech:gt.metaitem.01:32604>, <ore:cableGt04Platinum>, <gregtech:gt.metaitem.01:32604>]]);
 
@@ -1392,10 +1324,16 @@ recipes.addShaped(<IC2:blockChargepad>, [
 [<IC2:itemCasing:4>, <ore:craftingToolScrewdriver>, <IC2:itemCasing:4>]]);
 
 // --- Kinetic Generator
-recipes.addShaped(<IC2:blockGenerator:9>, [
-[<dreamcraft:item.StainlessSteelItemCasing>, <ore:rotorStainlessSteel>, <dreamcraft:item.StainlessSteelItemCasing>],
-[<IC2:itemRecipePart:12>, <gregtech:gt.blockcasings2:11>, <IC2:itemRecipePart:12>],
-[<ore:cableGt04Gold>, <ore:rotorStainlessSteel>, <ore:cableGt04Gold>]]);
+mods.avaritia.ExtremeCrafting.addShaped(<IC2:blockGenerator:9>, [
+[null, null, null, null, null, null, null, null, null],
+[null, null, null, null, null, null, null, null, null],
+[null, null, <ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>, <IC2:itemRecipePart:12>, <ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>, null, null],
+[null, null,  <ore:rotorStainlessSteel>, <ore:gearTitanium>, <gregtech:gt.blockmachines:13>, <ore:gearTitanium>,  <ore:rotorStainlessSteel>, null, null],
+[null, null, <ore:cableGt01Platinum>, <ore:circuitData>, <gregtech:gt.blockcasings2:11>, <ore:circuitData>, <ore:cableGt01Platinum>, null, null],
+[null, null,  <ore:rotorStainlessSteel>, <gregtech:gt.metaitem.01:32602>, <gregtech:gt.metaitem.01:32538>, <gregtech:gt.metaitem.01:32602>,  <ore:rotorStainlessSteel>, null, null],
+[null, null, <ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>, <IC2:itemRecipePart:12>, <ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>, null, null],
+[null, null, null, null, null, null, null, null, null],
+[null, null, null, null, null, null, null, null, null]]);
 
 // --- Nuclear Reactor
 recipes.addShaped(<IC2:blockGenerator:5>, [
@@ -1433,10 +1371,16 @@ recipes.addShaped(<IC2:blockKineticGenerator:1>, [
 [<ore:circuitAdvanced>, <ore:rotorStainlessSteel>, <ore:circuitAdvanced>]]);
 
 // --- Kinetic Wind Generator
-recipes.addShaped(<IC2:blockKineticGenerator>, [
-[<dreamcraft:item.StainlessSteelItemCasing>, <ore:rotorStainlessSteel>, <dreamcraft:item.StainlessSteelItemCasing>],
-[<IC2:itemRecipePart:12>, <gregtech:gt.blockcasings2:3>, <IC2:itemRecipePart:12>],
-[<ore:circuitAdvanced>, <ore:rotorStainlessSteel>, <ore:circuitAdvanced>]]);
+mods.avaritia.ExtremeCrafting.addShaped(<IC2:blockKineticGenerator>, [
+[null, null, null, null, null, null, null, null, null],
+[null, null, null, null, null, null, null, null, null],
+[null, null, <ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>, <IC2:itemRecipePart:12>, <ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>, null, null],
+[null, null, <dreamcraft:item.StainlessSteelItemCasing>, <ore:gearGtSmallTitanium>, <ore:cableGt01Platinum>, <ore:gearGtSmallTitanium>, <dreamcraft:item.StainlessSteelItemCasing>, null, null],
+[null, null, <IC2:itemRecipePart:12>, <ore:circuitData>, <gregtech:gt.blockcasings2:3>, <ore:circuitData>, <IC2:itemRecipePart:12>, null, null],
+[null, null, <dreamcraft:item.StainlessSteelItemCasing>, <gregtech:gt.metaitem.01:32602>, <ore:cableGt01Platinum>, <gregtech:gt.metaitem.01:32602>, <dreamcraft:item.StainlessSteelItemCasing>, null, null],
+[null, null, <ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>, <IC2:itemRecipePart:12>, <ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>, null, null],
+[null, null, null, null, null, null, null, null, null],
+[null, null, null, null, null, null, null, null, null]]);
 
 // --- Semi Fluid Generator
 recipes.addShaped(<IC2:blockGenerator:7>, [
@@ -1514,12 +1458,24 @@ recipes.addShaped(<gregtech:gt.metaitem.01:11084> * 16, [
 // --- Weeding Trowel
 recipes.addShaped(<IC2:itemWeedingTrowel>, [
 [<ore:screwSteel>, <ore:stickSteel>, <ore:craftingToolScrewdriver>],
-[<ore:plateRubber>, <ore:stickSteel>, <ore:stickSteel>],
-[<ore:stickSteel>, <ore:plateRubber>, <ore:screwSteel>]]);
+[<ore:plateAnyRubber>, <ore:stickSteel>, <ore:stickSteel>],
+[<ore:stickSteel>, <ore:plateAnyRubber>, <ore:screwSteel>]]);
 
+// --- Solar Panel
+recipes.addShaped(<gregtech:gt.metaitem.01:32750>, [
+[<ore:craftingToolCrowbar>, <IC2:blockGenerator:3>, <ore:craftingToolScrewdriver>],
+[<ore:craftingToolWrench>, <ore:craftingToolHardHammer>, <ore:craftingToolFile>]]);
+
+// --- Cell Exchange
+recipes.addShapeless(<IC2:itemFluidCell>, [<IC2:itemCellEmpty>]);
+// -
+recipes.addShapeless(<IC2:itemCellEmpty>, [<IC2:itemFluidCell>]);
 
 // --- CF Powder
-recipes.addShapeless(<IC2:itemPartCFPowder>, [<ore:dustCalcite>, <ore:dustCalcite>, <ore:dustStone>, <ore:dustClay>, <dreamcraft:item.SandDust>]);
+recipes.addShaped(<IC2:itemPartCFPowder>, [
+[<ore:dustCalcite>, <ore:dustCalcite>, <ore:dustStone>],
+[<ore:dustClay>, <dreamcraft:item.SandDust>, null],
+[null, null, null]]);
 
 
 
@@ -1593,9 +1549,6 @@ Assembler.addRecipe(<IC2:itemRecipePart>, <gregtech:gt.metaitem.01:23355>, <greg
 
 // --- Coal Chunk
 Assembler.addRecipe(<IC2:itemPartCoalChunk>, <minecraft:coal_block>, <IC2:itemPartCoalBlock> * 8, 1200, 64);
-
-// --- Thick Neutron Reflector
-Assembler.addRecipe(<IC2:reactorReflectorThick:1>, <IC2:reactorReflector:1>, <gregtech:gt.metaitem.01:17008> * 4, 600, 64);
 
 // --- Treetap
 Assembler.addRecipe(<IC2:itemTreetap>, <gregtech:gt.blockmachines:5102> * 3, <gregtech:gt.metaitem.01:27809>, 200, 8);
@@ -1686,18 +1639,6 @@ Assembler.addRecipe(<IC2:itemSolarHelmet>, <minecraft:iron_helmet>, <gregtech:gt
 // -
 Assembler.addRecipe(<IC2:itemSolarHelmet>, <minecraft:iron_helmet>, <gregtech:gt.metaitem.01:32750>, <liquid:molten.solderingalloy> * 72, 600, 30);
 
-// --- Nano Suit Boots
-Assembler.addRecipe(<IC2:itemArmorNanoBoots:1>, <dreamcraft:item.CarbonPartBoots>, <dreamcraft:item.NanoCrystal>, <liquid:molten.redstone> * 144, 600, 480);
-
-// --- Nano Suit Chestplate
-Assembler.addRecipe(<IC2:itemArmorNanoChestplate:1>, <dreamcraft:item.CarbonPartChestplate>, <dreamcraft:item.NanoCrystal>, <liquid:molten.redstone> * 144, 600, 480);
-
-// --- Nano Suit Helmet
-Assembler.addRecipe(<IC2:itemArmorNanoHelmet:1>, <dreamcraft:item.CarbonPartHelmetNightVision>, <dreamcraft:item.NanoCrystal>, <liquid:molten.redstone> * 144, 600, 480);
-
-// --- Nano Suit Leggings
-Assembler.addRecipe(<IC2:itemArmorNanoLegs:1>, <dreamcraft:item.CarbonPartLeggings>, <dreamcraft:item.NanoCrystal>, <liquid:molten.redstone> * 144, 600, 480);
-
 // --- Containment Box
 Assembler.addRecipe(<IC2:itemContainmentbox>, <minecraft:chest>, <IC2:itemCasing:6> * 8, 300, 120);
 
@@ -1723,9 +1664,9 @@ Assembler.addRecipe(<IC2:blockReactorAccessHatch>, <IC2:blockreactorvessel>, <gr
 Assembler.addRecipe(<IC2:blockReactorRedstonePort>, <IC2:blockreactorvessel>, <gregtech:gt.metaitem.01:32731>, 400, 120);
 
 // --- Luminator
-Assembler.addRecipe(<IC2:blockLuminatorDark> * 8, <gregtech:gt.metaitem.01:30087>, <gregtech:gt.blockmachines:1360> * 8, <liquid:molten.glass> * 8000, 600, 30);
+Assembler.addRecipe(<IC2:blockLuminatorDark> * 8, <gregtech:gt.metaitem.01:30087>, <gregtech:gt.blockmachines:1360> * 8, <liquid:molten.glass> * 1152, 600, 30);
 // -
-Assembler.addRecipe(<IC2:blockLuminatorDark> * 16, <gregtech:gt.metaitem.01:30004>, <gregtech:gt.blockmachines:1360> * 16, <liquid:molten.glass> * 8000, 400, 64);
+Assembler.addRecipe(<IC2:blockLuminatorDark> * 16, <gregtech:gt.metaitem.01:30004>, <gregtech:gt.blockmachines:1360> * 16, <liquid:molten.glass> * 1152, 400, 64);
 
 // --- Iron Furnace
 Assembler.addRecipe(IronFurnace, <minecraft:furnace>, <gregtech:gt.metaitem.01:17032> * 5, 400, 16);
@@ -1752,7 +1693,7 @@ BlastFurnace.addRecipe([<IC2:itemPartCarbonPlate>], [<dreamcraft:item.BioCarbonP
 
 
 // --- Bio Mass
-Brewery.addRecipe(<liquid:water> * 1000, <IC2:itemBiochaff>, <liquid:ic2biomass> * 1000, false);
+Brewery.addRecipe(<liquid:ic2biomass> * 1000, <IC2:itemBiochaff>, <liquid:water> * 1000, false);
 
 
 
@@ -1869,6 +1810,26 @@ Extruder.addRecipe(<IC2:itemBoat:1>, <gregtech:gt.metaitem.01:11880> * 4, <dream
 // --- Electric Boat Hull
 Extruder.addRecipe(<dreamcraft:item.ElectricBoatHull>, <minecraft:iron_ingot> * 8, <dreamcraft:item.ExtruderShapeBoat> * 0, 1200, 30);
 
+// --- Mining Pipe
+Extruder.addRecipe(<IC2:blockMiningPipe>, <gregtech:gt.blockmachines:5130>, <gregtech:gt.metaitem.01:32358> * 0, 1, 64);
+// -
+Extruder.addRecipe(<IC2:blockMiningPipe> * 2, <gregtech:gt.blockmachines:5131>, <gregtech:gt.metaitem.01:32358> * 0, 4, 64);
+// -
+Extruder.addRecipe(<IC2:blockMiningPipe> * 4, <gregtech:gt.blockmachines:5132>, <gregtech:gt.metaitem.01:32358> * 0, 8, 64);
+// -
+Extruder.addRecipe(<IC2:blockMiningPipe> * 8, <gregtech:gt.blockmachines:5133>, <gregtech:gt.metaitem.01:32358> * 0, 16, 64);
+// -
+Extruder.addRecipe(<IC2:blockMiningPipe> * 16, <gregtech:gt.blockmachines:5134>, <gregtech:gt.metaitem.01:32358> * 0, 32, 64);
+// -
+Extruder.addRecipe(<IC2:blockMiningPipe> * 8, <gregtech:gt.blockmachines:5140>, <gregtech:gt.metaitem.01:32358> * 0, 4, 120);
+// -
+Extruder.addRecipe(<IC2:blockMiningPipe> * 16, <gregtech:gt.blockmachines:5141>, <gregtech:gt.metaitem.01:32358> * 0, 8, 120);
+// -
+Extruder.addRecipe(<IC2:blockMiningPipe> * 32, <gregtech:gt.blockmachines:5142>, <gregtech:gt.metaitem.01:32358> * 0, 16, 120);
+// -
+Extruder.addRecipe(<IC2:blockMiningPipe> * 64, <gregtech:gt.blockmachines:5143>, <gregtech:gt.metaitem.01:32358> * 0, 32, 120);
+
+
 
 
 // --- Fluid Canner Recipes
@@ -1937,7 +1898,7 @@ PlateBender.addRecipe(<IC2:itemDensePlates:8>, <gregtech:gt.metaitem.01:17526> *
 Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2844>], <IC2:blockBasalt>, [10000], 300, 2);
 
 // --- Lapatron to dust
-Pulverizer.addRecipe([<dreamcraft:item.LapotronDust> * 30],  <IC2:itemBatLamaCrystal:1>, [10000], 300, 2);
+Pulverizer.addRecipe([<dreamcraft:item.LapotronDust> * 30],  <IC2:itemBatLamaCrystal:*>, [10000], 300, 2);
 
 
 
@@ -1968,9 +1929,24 @@ Polarizer.addRecipe(<IC2:itemStaticBoots>, <minecraft:iron_boots>,  600, 30);
 
 
 // --- Mining Pipe
-Wiremill.addRecipe(<IC2:blockMiningPipe>, <gregtech:gt.blockmachines:5130>, 200, 16);
+Wiremill.addRecipe(<IC2:blockMiningPipe>, <gregtech:gt.blockmachines:5130>, 100, 4);
+// -
+Wiremill.addRecipe(<IC2:blockMiningPipe> * 2, <gregtech:gt.blockmachines:5131>, 150, 8);
+// -
+Wiremill.addRecipe(<IC2:blockMiningPipe> * 4, <gregtech:gt.blockmachines:5132>, 200, 16);
+// -
+Wiremill.addRecipe(<IC2:blockMiningPipe> * 8, <gregtech:gt.blockmachines:5133>, 250, 30);
+// -
+Wiremill.addRecipe(<IC2:blockMiningPipe> * 16, <gregtech:gt.blockmachines:5134>, 300, 64);
+// -
+Wiremill.addRecipe(<IC2:blockMiningPipe> * 8, <gregtech:gt.blockmachines:5140>, 200, 64);
+// -
+Wiremill.addRecipe(<IC2:blockMiningPipe> * 16, <gregtech:gt.blockmachines:5141>, 250, 96);
+// -
+Wiremill.addRecipe(<IC2:blockMiningPipe> * 32, <gregtech:gt.blockmachines:5142>, 300, 120);
+// -
+Wiremill.addRecipe(<IC2:blockMiningPipe> * 64, <gregtech:gt.blockmachines:5143>, 350, 256);
 
-Wiremill.addRecipe(<IC2:blockMiningPipe> * 2, <gregtech:gt.blockmachines:5131>, 400, 30);
 
 
 

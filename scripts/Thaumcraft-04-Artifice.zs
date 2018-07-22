@@ -5,7 +5,7 @@
 // --- Importing Stuff ---
 
 
-
+import mods.gregtech.CuttingSaw;
 import mods.gregtech.PrecisionLaser;
 
 
@@ -190,12 +190,22 @@ mods.thaumcraft.Infusion.removeRecipe(<Thaumcraft:ItemLeggingsFortress>);
 // --- Bone Bow
 mods.thaumcraft.Arcane.removeRecipe(<Thaumcraft:ItemBowBone>);
 
+// --- Scribing Tool
+recipes.removeShapeless(<Thaumcraft:ItemInkwell>, [<minecraft:glass_bottle>, <minecraft:feather>, <ore:dyeBlack>]);
+
+// --- Arcane Stone Slabs
+recipes.remove(<Thaumcraft:blockCosmeticSlabStone>);
+
 
 
 
 
 // --- Adding Recipes ---
 
+
+
+// --- Scribing Tool
+recipes.addShapeless(<Thaumcraft:ItemInkwell>, [<Thaumcraft:ItemEssence>, <minecraft:feather>, <ore:dyeBlack>]);
 
 
 // --- Thaumometer
@@ -277,6 +287,8 @@ mods.thaumcraft.Arcane.addShaped("ARCANESTONE", <Thaumcraft:blockCosmeticSolid:6
 [<ore:stone>, <ore:stone>, <ore:stone>],
 [<ore:stone>, <Thaumcraft:blockCrystal:*>, <ore:stone>],
 [<ore:stone>, <ore:stone>, <ore:stone>]]);
+// -
+recipes.addShapeless(<Thaumcraft:blockCosmeticSlabStone> * 2, [<Thaumcraft:blockCosmeticSolid:7>, <ore:craftingToolSaw>]);
 // -
 mods.thaumcraft.Research.clearPages("ARCANESTONE");
 mods.thaumcraft.Research.addPage("ARCANESTONE", "tc.research_page.ARCANESTONE.1");
@@ -694,6 +706,21 @@ mods.thaumcraft.Research.setComplexity("BONEBOW", 2);
 
 
 
+// --- Cutting Saw recipes ---
+
+
+// --- Arcane Stone Slabs
+CuttingSaw.addRecipe(<Thaumcraft:blockCosmeticSlabStone> * 4, null, <Thaumcraft:blockCosmeticSolid:7>, <liquid:water> * 32, 400, 30);
+// -
+CuttingSaw.addRecipe(<Thaumcraft:blockCosmeticSlabStone> * 4, null, <Thaumcraft:blockCosmeticSolid:7>, <liquid:ic2distilledwater> * 20, 400, 30);
+// -
+CuttingSaw.addRecipe(<Thaumcraft:blockCosmeticSlabStone> * 4, null, <Thaumcraft:blockCosmeticSolid:7>, <liquid:lubricant> * 8, 200, 30);
+
+
+
+
+
+
 
 // --- Precision Laser Recipes --- 
 
@@ -701,6 +728,8 @@ mods.thaumcraft.Research.setComplexity("BONEBOW", 2);
 
 // --- Arcan Stone Bricks
 PrecisionLaser.addRecipe(<Thaumcraft:blockCosmeticSolid:7>, <Thaumcraft:blockCosmeticSolid:6>, <gregtech:gt.metaitem.01:24502> * 0, 600, 120);
+// -
+PrecisionLaser.addRecipe(<Thaumcraft:blockCosmeticSolid:7>, <Thaumcraft:blockCosmeticSolid:6>, <gregtech:gt.metaitem.01:24512> * 0, 600, 120);
 
 
 

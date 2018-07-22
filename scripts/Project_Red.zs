@@ -6,6 +6,7 @@
 
 
 import mods.gregtech.Assembler;
+import mods.gregtech.CircuitAssembler;
 import mods.gregtech.Canner;
 import mods.gregtech.ChemicalBath;
 import mods.ic2.Compressor;
@@ -566,8 +567,8 @@ recipes.addShaped(<ProjRed|Core:projectred.core.part:44>, [
 // --- Screwdriver
 recipes.addShaped(<ProjRed|Core:projectred.core.screwdriver>, [
 [null, <ore:craftingToolFile>, <ore:stickSteel>],
-[<ore:stickRubber>, <ore:stickSteel>, <ore:craftingToolHardHammer>],
-[<ore:stickRubber>, <ore:stickRubber>, null]]);
+[<ore:stickAnyRubber>, <ore:stickSteel>, <ore:craftingToolHardHammer>],
+[<ore:stickAnyRubber>, <ore:stickAnyRubber>, null]]);
 
 // --- Multimeter
 recipes.addShaped(<ProjRed|Core:projectred.core.wiredebugger>, [
@@ -576,7 +577,7 @@ recipes.addShaped(<ProjRed|Core:projectred.core.wiredebugger>, [
 [<ore:screwSteel>, <ore:craftingToolScrewdriver>, <ore:screwSteel>]]);
 
 // --- Black Insulated Wire
-recipes.addShapeless(<ProjRed|Transmission:projectred.transmission.wire:16>, [<ProjRed|Transmission:projectred.transmission.wire>, <ore:plateRubber>]);
+recipes.addShapeless(<ProjRed|Transmission:projectred.transmission.wire:16>, [<ProjRed|Transmission:projectred.transmission.wire>, <ore:plateAnyRubber>]);
 
 // --- White Insulated Wire
 recipes.addShapeless(<ProjRed|Transmission:projectred.transmission.wire:1>, [<ProjRed|Transmission:projectred.transmission.wire:16>, <ore:dyeWhite>]);
@@ -896,6 +897,8 @@ Assembler.addRecipe(<ProjRed|Core:projectred.core.part:5>, <ProjRed|Core:project
 
 // --- Pointer
 Assembler.addRecipe(<ProjRed|Core:projectred.core.part:6> ,<ProjRed|Core:projectred.core.part:5>, <gregtech:gt.metaitem.01:24502>, 500, 30);
+// -
+Assembler.addRecipe(<ProjRed|Core:projectred.core.part:6> ,<ProjRed|Core:projectred.core.part:5>, <gregtech:gt.metaitem.01:24512>, 500, 30);
 
 // --- Platformed Plate
 Assembler.addRecipe(<ProjRed|Core:projectred.core.part:9>, <ProjRed|Core:projectred.core.part:2> * 4, <gregtech:gt.metaitem.01:23874> * 4, 300, 64);
@@ -910,7 +913,7 @@ Assembler.addRecipe(<ProjRed|Core:projectred.core.part:9>, <ProjRed|Core:project
 //Assembler.addRecipe(<ProjRed|Core:projectred.core.part:47>, <ProjRed|Core:projectred.core.part:46>, <gregtech:gt.blockmachines:1200> * 2, <liquid:molten.redstone> * 288, 400, 24);
 
 // --- LZ Upgarde
-Assembler.addRecipe(<ProjRed|Core:projectred.core.part:48>, <ProjRed|Core:projectred.core.part:47>, <gregtech:gt.metaitem.01:23501> * 2, <liquid:molten.redstone> * 288, 300, 30);
+//Assembler.addRecipe(<ProjRed|Core:projectred.core.part:48>, <ProjRed|Core:projectred.core.part:47>, <gregtech:gt.metaitem.01:23501> * 2, <liquid:molten.redstone> * 288, 300, 30);
 
 // --- Data Card
 Assembler.addRecipe(<ProjRed|Core:projectred.core.datacard>, <gregtech:gt.metaitem.01:20879>, <gregtech:gt.integrated_circuit:1> * 0, <liquid:molten.redstone> * 288, 200, 16);
@@ -920,11 +923,17 @@ Assembler.addRecipe(<ProjRed|Expansion:projectred.expansion.electric_screwdriver
 
 // --- Bundled  Cable
 Assembler.addRecipe(<ProjRed|Transmission:projectred.transmission.wire:17>, <ProjRed|Transmission:projectred.transmission.wire> * 5, <gregtech:gt.metaitem.01:17880> * 5, 300, 30);
+Assembler.addRecipe(<ProjRed|Transmission:projectred.transmission.wire:17>, <ProjRed|Transmission:projectred.transmission.wire> * 5, <gregtech:gt.metaitem.01:17635> * 5, 300, 30);
+Assembler.addRecipe(<ProjRed|Transmission:projectred.transmission.wire:17>, <ProjRed|Transmission:projectred.transmission.wire> * 5, <gregtech:gt.metaitem.01:17471> * 5, 300, 30);
 
 // --- Item Transport Pipe
 Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe>, <TConstruct:GlassPane>, <gregtech:gt.metaitem.02:22032> * 2, 100, 30);
 // -
 Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe>, <minecraft:glass_pane>, <gregtech:gt.metaitem.02:22032> * 2, 100, 30);
+
+// --- Routed Junction Pipes
+Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe:1> * 4, [<ProjRed|Transportation:projectred.transportation.pipe> * 4, <ProjRed|Core:projectred.core.part:13> * 2, <ore:plateDiamond>], null, 800, 30);
+
 
 // --- Routed Interface Pipe
 Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe:2>, <ProjRed|Transportation:projectred.transportation.pipe:1>, <gregtech:gt.metaitem.01:17086> * 4, <liquid:molten.redstone> * 576, 400, 30);
@@ -945,7 +954,7 @@ Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe:6>, <
 Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe:7>, <ProjRed|Transportation:projectred.transportation.pipe>, <gregtech:gt.metaitem.01:17032>, 200, 30);
 
 // --- Pressure Resistance Tube
-Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe:8>, <ProjRed|Transportation:projectred.transportation.pipe:7>, <gregtech:gt.metaitem.01:17305>, 300, 30);
+Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe:8>, <ProjRed|Transportation:projectred.transportation.pipe:7>, <ore:plate Obsidian>, 300, 30);
 
 // --- Network Vave Pipe
 Assembler.addRecipe(<ProjRed|Transportation:projectred.transportation.pipe:9>, <ProjRed|Transportation:projectred.transportation.pipe>, <StevesCarts:ModuleComponents:60>, 200, 30);
@@ -961,6 +970,84 @@ Assembler.addRecipe(<ProjRed|Fabrication:projectred.fabrication.icblueprint>, <g
 
 // --- Recipe Plan
 Assembler.addRecipe(<ProjRed|Expansion:projectred.expansion.plan>, <gregtech:gt.metaitem.01:18879>, <gregtech:gt.integrated_circuit:1> * 0, 100, 8);
+
+
+
+// --- Circuit Assembler Recipes ---
+
+
+
+// --- Null Logic Routing Chip
+CircuitAssembler.addRecipe(<ProjRed|Core:projectred.core.part:44>, [<ProjRed|Core:projectred.core.part> * 2, <ore:circuitBasic>, <ore:wireGt01Gold> * 3], <liquid:molten.lead> * 144, 600, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Core:projectred.core.part:44>, [<ProjRed|Core:projectred.core.part> * 2, <ore:circuitBasic>, <ore:wireGt01Gold> * 3], <liquid:molten.tin> * 72, 600, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Core:projectred.core.part:44>, [<ProjRed|Core:projectred.core.part> * 2, <ore:circuitBasic>, <ore:wireGt01Gold> * 3], <liquid:molten.solderingalloy> * 36, 600, 30);
+
+// --- Item Responder Chip
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitBasic>, <ore:plateCopper>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:20> * 2], <liquid:molten.lead> * 144, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitBasic>, <ore:plateCopper>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:20> * 2], <liquid:molten.tin> * 72, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitBasic>, <ore:plateCopper>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:20> * 2], <liquid:molten.solderingalloy> * 36, 900, 30);
+
+// --- Dynamic Item Responder Chip
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:1>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitBasic>, <ore:plateBronze>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:20>, <ProjRed|Core:projectred.core.part:28>], <liquid:molten.lead> * 144, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:1>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitBasic>, <ore:plateBronze>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:20>, <ProjRed|Core:projectred.core.part:28>], <liquid:molten.tin> * 72, 900, 30);
+//-
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:1>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitBasic>, <ore:plateBronze>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:20>, <ProjRed|Core:projectred.core.part:28>], <liquid:molten.solderingalloy> * 36, 900, 30);
+
+// --- Item Overflow Responder Chip
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:2>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitBasic>, <ore:plateIron>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:32> * 2], <liquid:molten.lead> * 144, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:2>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitBasic>, <ore:plateIron>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:32> * 2], <liquid:molten.tin> * 72, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:2>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitBasic>, <ore:plateIron>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:32> * 2], <liquid:molten.solderingalloy> * 36, 900, 30);
+
+// --- Item Terminator Chip
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:3>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitBasic>, <ore:plateTin>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:29>, <ProjRed|Core:projectred.core.part:26>], <liquid:molten.lead> * 144, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:3>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitBasic>, <ore:plateTin>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:29>, <ProjRed|Core:projectred.core.part:26>], <liquid:molten.tin> * 72, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:3>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitBasic>, <ore:plateTin>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:29>, <ProjRed|Core:projectred.core.part:26>], <liquid:molten.solderingalloy> * 36, 900, 30);
+
+// --- Item Extraction Chip
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:4>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitBasic>, <ore:plateSteel>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:28> * 2], <liquid:molten.lead> * 144, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:4>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitBasic>, <ore:plateSteel>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:28> * 2], <liquid:molten.tin> * 72, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:4>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitBasic>, <ore:plateSteel>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:28> * 2], <liquid:molten.solderingalloy> * 36, 900, 30);
+
+// --- Item Broadcast Chip
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:5>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitGood>, <ore:plateGold>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:21> * 2], <liquid:molten.lead> * 144, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:5>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitGood>, <ore:plateGold>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:21> * 2], <liquid:molten.tin> * 72, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:5>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitGood>, <ore:plateGold>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:21> * 2], <liquid:molten.solderingalloy> * 36, 900, 30);
+
+// --- Item Stock Keeper Chip
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:6>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitGood>, <ore:plateDiamond>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:30> * 2], <liquid:molten.lead> * 144, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:6>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitGood>, <ore:plateDiamond>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:30> * 2], <liquid:molten.tin> * 72, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:6>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitGood>, <ore:plateDiamond>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:30> * 2], <liquid:molten.solderingalloy> * 36, 900, 30);
+
+// --- Item Crafting Chip
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:7>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitGood>, <ore:plateGlowstone>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:24> * 2], <liquid:molten.lead> * 144, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:7>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitGood>, <ore:plateGlowstone>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:24> * 2], <liquid:molten.tin> * 72, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:7>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitGood>, <ore:plateGlowstone>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:24> * 2], <liquid:molten.solderingalloy> * 36, 900, 30);
+
+// --- Item Crafting Extension Chip
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:8>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitGood>, <ore:plateRedAlloy>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:33> * 2], <liquid:molten.lead> * 144, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:8>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitGood>, <ore:plateRedAlloy>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:33> * 2], <liquid:molten.tin> * 72, 900, 30);
+// -
+CircuitAssembler.addRecipe(<ProjRed|Transportation:projectred.transportation.routingchip:8>, [<ProjRed|Core:projectred.core.part:44>, <ore:circuitGood>, <ore:plateRedAlloy>, <ore:wireGt01RedAlloy> * 2, <ProjRed|Core:projectred.core.part:33> * 2], <liquid:molten.solderingalloy> * 36, 900, 30);
+
+
 
 
 
@@ -1086,9 +1173,6 @@ Compressor.addRecipe(<ProjRed|Core:projectred.core.part:55>, <ProjRed|Core:proje
 // --- Forming Press Recipes ---
 
 
-
-// --- Circuit Plate
-FormingPress.addRecipe(<ProjRed|Core:projectred.core.part> * 4, <minecraft:stone_pressure_plate> * 4, <IC2:itemPartCircuit>, 400, 16);
 
 // --- Silicon Ship
 FormingPress.addRecipe(<ProjRed|Core:projectred.core.part:7>, <ProjRed|Core:projectred.core.part>, <ProjRed|Core:projectred.core.part:13>, 600, 30);
@@ -1314,9 +1398,13 @@ Mixer.addRecipe(<ProjRed|Core:projectred.core.part:34>, [<minecraft:glowstone_du
 
 // --- Black Insulated Wire
 Packer.addRecipe(<ProjRed|Transmission:projectred.transmission.wire:16>, <ProjRed|Transmission:projectred.transmission.wire>, <gregtech:gt.metaitem.01:17880>, 100, 8);
+Packer.addRecipe(<ProjRed|Transmission:projectred.transmission.wire:16>, <ProjRed|Transmission:projectred.transmission.wire>, <gregtech:gt.metaitem.01:17635>, 100, 8);
+Packer.addRecipe(<ProjRed|Transmission:projectred.transmission.wire:16>, <ProjRed|Transmission:projectred.transmission.wire>, <gregtech:gt.metaitem.01:17471>, 100, 8);
 
 // --- Low Load Power Line
 Packer.addRecipe(<ProjRed|Transmission:projectred.transmission.wire:34>, <dreamcraft:item.ElectrotineWire>, <gregtech:gt.metaitem.01:17880>, 100, 8);
+Packer.addRecipe(<ProjRed|Transmission:projectred.transmission.wire:34>, <dreamcraft:item.ElectrotineWire>, <gregtech:gt.metaitem.01:17635>, 100, 8);
+Packer.addRecipe(<ProjRed|Transmission:projectred.transmission.wire:34>, <dreamcraft:item.ElectrotineWire>, <gregtech:gt.metaitem.01:17471>, 100, 8);
 
 
 
@@ -1341,6 +1429,8 @@ Unpacker.addRecipe(<dreamcraft:item.ElectrotineWire>, <gregtech:gt.metaitem.01:1
 mods.chisel.Groups.addVariation("ruby", <BiomesOPlenty:gemOre:3>);
 // -
 mods.chisel.Groups.addVariation("ruby", <gregtech:gt.blockgem1:9>);
+// -
+mods.chisel.Groups.addVariation("ruby", <gregtech:gt.blockgem2:11>);
 // -
 mods.chisel.Groups.addVariation("ruby", <ProjRed|Exploration:projectred.exploration.stone:5>);
 

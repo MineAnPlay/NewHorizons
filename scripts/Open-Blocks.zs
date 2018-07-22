@@ -292,7 +292,7 @@ recipes.addShaped(<OpenBlocks:elevator_rotating>, [
 // --- Vacuum Hopper
 recipes.addShaped(<OpenBlocks:vacuumhopper>, [
 [<ore:plateObsidian>, Hopper, <ore:plateObsidian>],
-[Hopper, <ore:plateEnderEye>, Hopper],
+[Hopper, <ore:plateEnderPearl>, Hopper],
 [<ore:plateObsidian>, Hopper, <ore:plateObsidian>]]);
 
 // --- Sprinkler
@@ -394,6 +394,7 @@ recipes.addShaped(<OpenBlocks:sonicglasses>, [
 
 
 
+
 // --- Assembler Recipes
 
 
@@ -444,9 +445,6 @@ Assembler.addRecipe(<OpenBlocks:emptyMap>.withTag({Scale: 4 as byte}), <OpenBloc
 
 // --- Catographer
 Assembler.addRecipe(<OpenBlocks:cartographer>, <OpenBlocks:generic:9>, <minecraft:ender_eye>, <liquid:ender> * 1000, 600, 120);
-
-// --- Dev/Null
-Assembler.addRecipe(<OpenBlocks:devnull>, <ExtraUtilities:trashcan>, <gregtech:gt.integrated_circuit:1> * 0, <liquid:ender> * 250, 300, 30);
 
 // --- Pedometer
 Assembler.addRecipe(<OpenBlocks:pedometer>, <minecraft:clock>, <IC2:itemPartCircuit> * 2, <liquid:molten.redstone> * 144, 200, 30);
